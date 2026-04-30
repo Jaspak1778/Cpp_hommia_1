@@ -71,6 +71,7 @@ void hypotenuusa()
 };
 
 
+
 void jakojaannos() 
 {
 	int luku1 = 7;
