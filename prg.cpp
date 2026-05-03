@@ -16,7 +16,6 @@ void muunnakurssi()
 
 };
 
-
 void laskeympyranala()
 
 {
@@ -30,7 +29,6 @@ void laskeympyranala()
 	cout << "Ympyrän ala annetulla säteellä: " << ala << endl;
 
 };
-
 
 void laskin()
 
@@ -55,7 +53,6 @@ void laskin()
 	
 };
 
-
 void hypotenuusa()
 
 {
@@ -70,14 +67,68 @@ void hypotenuusa()
 	cout << "Hypotenuusan pituus: " << hypotenuusa << endl;
 };
 
-
-
 void jakojaannos() 
 {
-	int luku1 = 7;
-	int luku2 = 3;
-	int luku3 = 0;
-	luku3 = luku1 % luku2;
+	int luku1;
+	int jaollinen = 2;
+	
+	cout << "Anna kokonaisluku: ";
+	cin >> luku1;
+	
+	if (luku1 % jaollinen != 0)
+	{
+		cout << "Luku " << luku1 << " on pariton.";
+ 	}
+	else 
+	{
+		cout << "Luku " << luku1 << " on parillinen.";
+	}
+	
+};
 
-	cout << "Luku on: " << luku3 << endl;
+void sokerinkulutus()
+{
+	int sokeri;
+	char valinta;
+
+	cout << "Juotko kahvia vai teetä? (k/t) ";
+	cin >> valinta;
+	
+	cout << "Montako palaa sokeria? ";
+	cin >> sokeri;
+
+	if (valinta == 'k')
+	{
+		if (sokeri >= 0 && sokeri <= 2)
+		{
+			cout << "Kahvi kyllä piristää!";
+		
+		}
+		else if (sokeri >= 3)
+		{
+			cout << "Kahvi voi olla aika vahva maku...";	
+		}
+		else 
+		{
+			cout << "Ohjelmassa tapahtunut virhe!";
+		}
+			
+	}
+	else if (valinta == 't')
+	{
+		if (sokeri >= 0 && sokeri <= 2)
+		{
+			cout << "Tee usein rauhoittaa!";
+		}
+		else if (sokeri >= 3)
+		{
+			cout << "Taidat pitää teestäsi makeana?";
+		}
+		else
+		{
+			cout << "Ohjelmassa tapahtunut virhe!";
+		}
+
+	}
+	
 };
