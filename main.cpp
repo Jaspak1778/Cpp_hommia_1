@@ -15,6 +15,9 @@ int main() {
     cout << "4: Jakojäännös" << endl;
 	cout << "5: Hypotenuusa" << endl;
 	cout << "6: Sokerinkulutus" << endl;
+    cout << "7: Parempi laskin" << endl;
+    cout << "8: Silmukka" << endl;
+    cout << "9: Silmukka_2" << endl;
     cout << "Anna valinta ja paina enter: ";
     cin >> valinta;
 
@@ -26,6 +29,9 @@ int main() {
         case 4: jakojaannos(); break;
 		case 5: hypotenuusa(); break;
 		case 6: sokerinkulutus(); break;
+        case 7: parempilaskin(); break;
+        case 8: silmukka(); break;
+        case 9: silmukka_2(); break;
         default: cout << "Virheellinen valinta."; break;
     }
 
